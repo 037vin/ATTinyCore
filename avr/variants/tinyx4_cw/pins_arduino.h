@@ -256,6 +256,12 @@ static const uint8_t A7 = ADC_CH(7);
 
 #define USE_SOFTWARE_SPI 1
 
+#define USI_SCK_PORT 	      DDRA
+#define USCK_DD_PIN           DDA4
+#define USI_DDR_PORT          DDRA
+#define DO_DD_PIN             DDA5
+#define DI_DD_PIN             DDA6
+
 /* USI */
 #define USI_DI                PIN_PA6
 #define USI_DO                PIN_PA5

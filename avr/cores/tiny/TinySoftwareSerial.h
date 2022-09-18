@@ -41,6 +41,9 @@
     #error Please define ANALOG_COMP_AIN1_BIT in the pins_arduino.h file!
   #endif
 
+#define ANALOG_COMP_vect      _VECTOR(0)
+#define ARDUINO_MAIN
+
   #if ((defined(ACSRB) && !defined(ANALOG_COMP_AIN2_BIT)) && (defined(SOFTSERIAL_RXAIN0) || defined(SOFTSERIAL_RXAIN2)))
     #ifndef ANALOG_COMP_AIN2_BIT
       #error Please define ANALOG_COMP_AIN2_BIT in the pins_arduino.h file!
